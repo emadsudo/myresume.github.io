@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Background Color</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MY BIO</h1>
+    <h1><>"instagram > Emadsudo"</h1>
+    <h1><>"Github > Emadsudo"</h1>
+    <h1><>"TG ID > id455"</h1>
+    <p>An Simple Page About Me</p>
+    <p> Web Developer 
+        IT student 
+        Live IN Mashhad
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, p {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 24px;
+}
+
+/* JavaScript-generated random background color */
+body {
+  background-color: var(--bg-color);
+}
+
+</style>
+<script>
+    const root = document.documentElement;
+const colors = ['#34495e', '#c0392b', '#27ae60', '#f39c12', '#2980b9', '#e74c3c', '#2ecc71', '#f1c40f', '#1abc9c', '#d35400', '#8e44ad', '#16a085', '#e67e22', '#3498db', '#f7dc6f', '#2c3e50', '#9b59b6', '#e74c3c', '#7f8c8d'];
+const randomColor = colors[Math.floor(Math.random() * colors.length)];
+root.style.setProperty('--bg-color', randomColor);
+
+</script>
+<html>
+<head>
+  <title>Simple Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Wrote With Love </h1>
+    <p>@id455</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
