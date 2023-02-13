@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <button onclick="setBrightness(50)">Set brightness to 50%</button>
+<script>
+  function setBrightness(brightness) {
+  const body = document.querySelector('body');
+  body.style.filter = `brightness(${brightness}%)`;
+}
+
+</script>
  <div id="loader-container">
     <div id="loader"></div>
   </div>
