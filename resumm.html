@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+      <label for="font-selector">Select font:</label>
+<select id="font-selector" onchange="changeFont(this.value)">
+  <option value="sans-serif">Sans-serif</option>
+  <option value="serif">Serif</option>
+  <option value="monospace">Monospace</option>
+  <option value="cursive">Cursive</option>
+  <option value="fantasy">Fantasy</option>
+</select>
+
+<p>This is your font.</p>
+      <script>
+  function changeFont(font) {
+  document.body.style.fontFamily = font;
+}
+
+</script>
+
 <script>
       var userAgent = navigator.userAgent;
       if (/Win/i.test(userAgent)) {
