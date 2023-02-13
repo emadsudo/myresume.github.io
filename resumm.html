@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <label for="font-selector">Select font:</label>
-<select id="font-selector" onchange="changeFont(this.value)">
-  <option value="sans-serif">Sans-serif</option>
-  <option value="serif">Serif</option>
-  <option value="monospace">Monospace</option>
-  <option value="cursive">Cursive</option>
-  <option value="fantasy">Fantasy</option>
-</select>
-
+ 
 <p>This is your font.</p>
       <script>
   function changeFont(font) {
@@ -47,6 +39,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+      <label for="font-selector">Select font:</label>
+<select id="font-selector" onchange="changeFont(this.value)">
+  <option value="sans-serif">Sans-serif</option>
+  <option value="serif">Serif</option>
+  <option value="monospace">Monospace</option>
+  <option value="cursive">Cursive</option>
+  <option value="fantasy">Fantasy</option>
+</select>
   <div class="dna-background"></div>
   <div class="container">
     <h1>MY BIO</h1>
