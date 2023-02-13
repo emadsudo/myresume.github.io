@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="dna-background"></div>
   <div class="container">
     <h1>MY BIO</h1>
     <h1><>"instagram > Mr3udo </h1>
@@ -77,6 +78,30 @@ p {
 /* JavaScript-generated random background color */
 body {
   background-color: var(--bg-color);
+}
+
+</style>
+<style>
+  .dna-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    background: linear-gradient(to bottom, #FFC107 0%, #FFC107 50%, #2196F3 50%, #2196F3 100%);
+  }
+  50% {
+    background: linear-gradient(to bottom, #2196F3 0%, #2196F3 50%, #FFC107 50%, #FFC107 100%);
+  }
+  100% {
+    background: linear-gradient(to bottom, #FFC107 0%, #FFC107 50%, #2196F3 50%, #2196F3 100%);
+  }
 }
 
 </style>
