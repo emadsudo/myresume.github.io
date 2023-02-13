@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<p id="currentDate"></p>
+
+<script>
+  function displayDate() {
+    var date = new Date();
+    document.getElementById("currentDate").innerHTML = date.toLocaleDateString() + " " + date.toLocaleTimeString();
+  }
+  setInterval(displayDate, 1000);
+</script>
   <title>Random Background Color</title>
   <link rel="stylesheet" href="style.css">
 </head>
