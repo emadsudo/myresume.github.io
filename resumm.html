@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <button onclick="setBrightness(50)">Set brightness to 50%</button>
+  <div class="ip-address">
+    Your IP address is: <?php echo $_SERVER['REMOTE_ADDR']; ?>
+  </div>
+<style>
+  .ip-address {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+</style>  
 <script>
   function setBrightness(brightness) {
   const body = document.querySelector('body');
