@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+      var userAgent = navigator.userAgent;
+      if (/Win/i.test(userAgent)) {
+        document.write("<p>You are using Windows.</p>");
+      } else if (/Mac/i.test(userAgent)) {
+        document.write("<p>You are using macOS.</p>");
+      } else if (/Linux/i.test(userAgent)) {
+        document.write("<p>You are using Linux.</p>");
+      } else if (/Android/i.test(userAgent)) {
+        document.write("<p>You are using Android.</p>");
+      } else if (/iOS/i.test(userAgent)) {
+        document.write("<p>You are using iOS.</p>");
+      } else {
+        document.write("<p>Your operating system could not be detected.</p>");
+      }
+    </script>
 <p id="currentDate"></p>
 
 <script>
